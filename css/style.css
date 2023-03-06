@@ -1,0 +1,223 @@
+/* COLORS */
+/* TYPE */
+/* COLORS */
+/* TYPE */
+body {
+  background-color: #e5eff5;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: white;
+}
+
+.section-container {
+  padding: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1.125rem;
+  letter-spacing: -0.22px;
+  line-height: 1.17;
+}
+
+@media (min-width: 700px) {
+  .section-container {
+    padding: 2.5rem;
+  }
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.17;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 311px;
+}
+
+.card__hero {
+  padding: 1.75rem 1.5rem 2rem 1.5rem;
+}
+
+.card__hero .hero__title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #2ab2af;
+  letter-spacing: -0.25px;
+}
+
+.card__hero .hero__subtitle {
+  font-size: 0.938rem;
+  margin-bottom: 1rem;
+  color: #c0df34;
+  letter-spacing: -0.19px;
+  line-height: 1.33;
+}
+
+.card__hero .hero__description {
+  color: #98a6bd;
+  letter-spacing: -0.17px;
+  line-height: 1.86;
+}
+
+.card__details {
+  background-color: #2ab2af;
+}
+
+.card__pricing .pricing__details {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.card__pricing .pricing__details .pricing__value {
+  letter-spacing: -0.4px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card__pricing .pricing__details .pricing__period {
+  letter-spacing: -0.2px;
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+.card__pricing .pricing__description {
+  letter-spacing: -0.2px;
+  font-size: 1rem;
+  margin-bottom: 1.625rem;
+  line-height: 1.63;
+}
+
+.button-sign {
+  width: 100%;
+  padding: 0.938rem;
+  color: white;
+  letter-spacing: -0.2px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #c0df34;
+  border: 0;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card__about {
+  position: relative;
+}
+
+.card__about::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.15;
+}
+
+.card__about .about__description {
+  letter-spacing: -0.17px;
+  list-style: none;
+  padding: 0;
+  opacity: 0.75;
+  line-height: 1.43;
+}
+
+@media (min-width: 700px) {
+  .card {
+    max-width: 635px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card .card__details {
+    display: flex;
+  }
+  .card .card__details .card__pricing, .card .card__details .card__about {
+    flex: 1;
+  }
+  .card__hero {
+    padding: 2.5rem;
+  }
+  .card__hero .hero__title {
+    font-size: 1.5rem;
+    letter-spacing: -0.3px;
+  }
+  .card__hero .hero__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.17;
+  }
+  .card__hero .hero__description {
+    font-size: 1rem;
+    line-height: 1.63;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdmFyaWFibGVzLnNjc3MiLCIuLi9zYXNzL2dlbmVyYWwuc2NzcyIsInN0eWxlLmNzcyIsIi4uL3Nhc3MvcmVzZXQuc2NzcyIsIi4uL3Nhc3Mvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxXQUFBO0FBVUEsU0FBQTtBQVZBLFdBQUE7QUFVQSxTQUFBO0FDVEE7RUFDRSx5QkREaUM7RUNFakMsYUFBYTtFQUViLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBRW5CLGdDREU4QjtFQ0Q5QixtQkRXdUI7RUNWdkIsZ0JERWM7RUNEZCxZRFB3QjtBRVExQjs7QURFQTtFQUNFLGVBQWU7QUNDakI7O0FERUE7RUFDRSxtQkREeUI7RUNFekIsWURoQndCO0VDaUJ4QixnQkRSVztFQ1NYLHVCQUF1QjtFQUN2Qix1QkFBdUI7RUFDdkIsaUJBQWlCO0FDQ25COztBREVBO0VBQ0U7SUFDRSxlQUFlO0VDQ2pCO0FBQ0Y7O0FDakNBOztDRHFDQztBQ2xDRDtFQUNFLHNCQUFzQjtBRG9DeEI7O0FDbENBOztDRHNDQztBQ25DRDtFQUNFLFNBQVM7QURxQ1g7O0FDbkNBOztDRHVDQztBQ3BDRDtFQUNFLFlBQVk7QURzQ2Q7O0FDcENBOzs7O0NEMENDO0FDckNEO0VBQ0UsaUJBQWlCO0VBQ2pCLG1DQUFtQztBRHVDckM7O0FDckNBOztDRHlDQztBQ3RDRDtFQUNFLGNBQWM7RUFDZCxlQUFlO0FEd0NqQjs7QUN0Q0E7O0NEMENDO0FDdkNEO0VBQ0UsYUFBYTtBRHlDZjs7QUN2Q0E7O0NEMkNDO0FDeENEO0VBQ0UseUJBQXlCO0FEMEMzQjs7QUN4Q0E7O0NENENDO0FDekNEO0VBQ0Usa0JBQWtCO0FEMkNwQjs7QUV6RkE7RUFDRSx1QkpDd0I7RUlBeEIsb0RBQW9EO0VBQ3BELGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FGNEZsQjs7QUV6RkE7RUFDRSxtQ0FBbUM7QUY0RnJDOztBRTdGQTtFQUlJLGtCSkNtQjtFSUFuQixxQkFBcUI7RUFDckIsY0pkNEI7RUllNUIsdUJBQXVCO0FGNkYzQjs7QUVwR0E7RUFXSSxtQkpFb0I7RUlEcEIsbUJBQW1CO0VBQ25CLGNKdEIwQjtFSXVCMUIsdUJBQXVCO0VBQ3ZCLGlCQUFpQjtBRjZGckI7O0FFNUdBO0VBbUJJLGNKeEJ3QjtFSXlCeEIsdUJBQXVCO0VBQ3ZCLGlCQUFpQjtBRjZGckI7O0FFekZBO0VBQ0UseUJKbEM4QjtBRThIaEM7O0FFekZBO0VBR0ksYUFBYTtFQUNiLFNBQVM7RUFDVCxtQkFBbUI7QUYwRnZCOztBRS9GQTtFQVFNLHNCQUFzQjtFQUN0QixlSnZCYztFSXdCZCxnQkpwQ087QUUrSGI7O0FFckdBO0VBY00sc0JBQXNCO0VBQ3RCLGVKOUJjO0VJK0JkLFlBQVk7QUYyRmxCOztBRTNHQTtFQXFCSSxzQkFBc0I7RUFDdEIsZUpyQ2dCO0VJc0NoQix1QkFBdUI7RUFDdkIsaUJBQWlCO0FGMEZyQjs7QUV0RkE7RUFDRSxXQUFXO0VBQ1gsaUJBQWlCO0VBQ2pCLFlKbEV3QjtFSW1FeEIsc0JBQXNCO0VBQ3RCLGVKaERrQjtFSWlEbEIsZ0JKNURXO0VJNkRYLHlCSnpFNEI7RUkwRTVCLFNBQVM7RUFDVCxrREFBa0Q7RUFDbEQsa0JBQWtCO0VBQ2xCLGVBQWU7QUZ5RmpCOztBRXJGQTtFQUNFLGtCQUFrQjtBRndGcEI7O0FFekZBO0VBSUksV0FBVztFQUNYLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osV0FBVztFQUNYLE1BQU07RUFDTixPQUFPO0VBQ1AsdUJKeEZzQjtFSXlGdEIsYUFBYTtBRnlGakI7O0FFcEdBO0VBZUksdUJBQXVCO0VBQ3ZCLGdCQUFnQjtFQUNoQixVQUFVO0VBQ1YsYUFBYTtFQUNiLGlCQUFpQjtBRnlGckI7O0FFcEZBO0VBQ0U7SUFDRSxnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLHNCQUFzQjtFRnVGeEI7RUUxRkE7SUFNSSxhQUFhO0VGdUZqQjtFRTdGQTtJQVNNLE9BQU87RUZ1RmI7RUVsRkE7SUFDRSxlQUFlO0VGb0ZqQjtFRXJGQTtJQUlJLGlCSjdHZ0I7SUk4R2hCLHNCQUFzQjtFRm9GMUI7RUV6RkE7SUFTSSxtQkpoSHFCO0lJaUhyQixpQkFBaUI7RUZtRnJCO0VFN0ZBO0lBY0ksZUpsSGU7SUltSGYsaUJBQWlCO0VGa0ZyQjtBQUNGIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

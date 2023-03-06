@@ -1,0 +1,145 @@
+@import './variables.scss';
+@import './general.scss';
+@import './reset.scss';
+
+.card {
+  background-color: $clr-100;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 311px;
+}
+
+.card__hero {
+  padding: 1.75rem 1.5rem 2rem 1.5rem;
+
+  .hero__title {
+    font-size: $fs-header-100;
+    margin-bottom: 1.5rem;
+    color: $clr-primary;
+    letter-spacing: -0.25px;
+  }
+
+  .hero__subtitle {
+    font-size: $fs-accent-100;
+    margin-bottom: 1rem;
+    color: $clr-accent;
+    letter-spacing: -0.19px;
+    line-height: 1.33;
+  }
+
+  .hero__description {
+    color: $clr-200;
+    letter-spacing: -0.17px;
+    line-height: 1.86;
+  }
+}
+
+.card__details {
+  background-color: $clr-primary;
+}
+
+.card__pricing {
+
+  .pricing__details {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+
+    .pricing__value {
+      letter-spacing: -0.4px;
+      font-size: $fs-accent-300;
+      font-weight: $fw-bold;
+    }
+
+    .pricing__period {
+      letter-spacing: -0.2px;
+      font-size: $fs-accent-200;
+      opacity: 0.5;
+    }
+  }
+  
+  .pricing__description {
+    letter-spacing: -0.2px;
+    font-size: $fs-accent-200;
+    margin-bottom: 1.625rem;
+    line-height: 1.63;
+  }
+}
+
+.button-sign {
+  width: 100%;
+  padding: 0.938rem;
+  color: $clr-100;
+  letter-spacing: -0.2px;
+  font-size: $fs-accent-200;
+  font-weight: $fw-bold;
+  background-color: $clr-accent;
+  border: 0;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.card__about {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $clr-100;
+    opacity: 0.15;
+  }
+
+  .about__description {
+    letter-spacing: -0.17px;
+    list-style: none;
+    padding: 0;
+    opacity: 0.75;
+    line-height: 1.43;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .card {
+    max-width: 635px;
+    display: flex;
+    flex-direction: column;
+
+    .card__details {
+      display: flex;
+
+      .card__pricing, .card__about {
+        flex: 1;
+      }
+    }
+  }
+
+  .card__hero {
+    padding: 2.5rem;
+
+    .hero__title {
+      font-size: $fs-header-200;
+      letter-spacing: -0.3px;
+    }
+    
+    .hero__subtitle {
+      font-size: $fs-subheader-100;
+      line-height: 1.17;
+    }
+
+    .hero__description {
+      font-size: $fs-regular-200;
+      line-height: 1.63;
+    }
+  }
+}
+
+
+

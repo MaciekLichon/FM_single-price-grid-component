@@ -1,0 +1,33 @@
+/* COLORS */
+/* TYPE */
+body {
+  background-color: #e5eff5;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: white;
+}
+
+.section-container {
+  padding: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1.125rem;
+  letter-spacing: -0.22px;
+  line-height: 1.17;
+}
+
+@media (min-width: 700px) {
+  .section-container {
+    padding: 2.5rem;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdmFyaWFibGVzLnNjc3MiLCIuLi9zYXNzL2dlbmVyYWwuc2NzcyIsImdlbmVyYWwuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBLFdBQUE7QUFVQSxTQUFBO0FDVEE7RUFDRSx5QkREaUM7RUNFakMsYUFBYTtFQUViLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBRW5CLGdDREU4QjtFQ0Q5QixtQkRXdUI7RUNWdkIsZ0JERWM7RUNEZCxZRFB3QjtBRU0xQjs7QURJQTtFQUNFLGVBQWU7QUNEakI7O0FESUE7RUFDRSxtQkREeUI7RUNFekIsWURoQndCO0VDaUJ4QixnQkRSVztFQ1NYLHVCQUF1QjtFQUN2Qix1QkFBdUI7RUFDdkIsaUJBQWlCO0FDRG5COztBRElBO0VBQ0U7SUFDRSxlQUFlO0VDRGpCO0FBQ0YiLCJmaWxlIjoiZ2VuZXJhbC5jc3MifQ== */
